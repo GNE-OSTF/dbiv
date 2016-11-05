@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1099 679.573" enable-background="new 0 0 1099 679.573" xml:space="preserve">
+<g>
+	<path fill="#76B4E3" d="M1056.996,645.044c0,3.59-2.938,6.528-6.528,6.528H52.567c-3.59,0-6.528-2.938-6.528-6.528V33.399
+		c0-3.59,2.938-6.528,6.528-6.528h997.902c3.59,0,6.528,2.938,6.528,6.528V645.044z"/>
+	<path fill="none" stroke="#0E3047" stroke-miterlimit="10" d="M1056.996,645.044c0,3.59-2.938,6.528-6.528,6.528H52.567
+		c-3.59,0-6.528-2.938-6.528-6.528V33.399c0-3.59,2.938-6.528,6.528-6.528h997.902c3.59,0,6.528,2.938,6.528,6.528V645.044z"/>
+</g>
+<g>
+	<path fill="#FFFFFF" d="M540.467,633.803c0,0.743-0.608,1.352-1.352,1.352H61.614c-0.743,0-1.352-0.608-1.352-1.352v-53.69
+		c0-0.743,0.608-1.352,1.352-1.352h477.502c0.743,0,1.352,0.608,1.352,1.352V633.803z"/>
+</g>
+<g>
+	<path fill="#FFFFFF" d="M1039.106,563.444c0,2.272-1.859,4.131-4.131,4.131H562.033c-2.272,0-4.131-1.859-4.131-4.131V46.002
+		c0-2.272,1.859-4.131,4.131-4.131h472.942c2.272,0,4.131,1.859,4.131,4.131V563.444z"/>
+</g>
+<g>
+	<path fill="#FFFFFF" d="M541.131,563.444c0,2.272-1.859,4.131-4.131,4.131H64.058c-2.272,0-4.131-1.859-4.131-4.131V46.002
+		c0-2.272,1.859-4.131,4.131-4.131H537c2.272,0,4.131,1.859,4.131,4.131V563.444z"/>
+</g>
+<text transform="matrix(1 0 0 1 594.584 120.6233)" fill="#0E3047" stroke="#0B2D40" stroke-width="0.0957" stroke-miterlimit="10" font-family="'BerninoSans-CondensedRegular'" font-size="27.145" letter-spacing="1">NAME DES SPIELS</text>
+<g>
+	<rect x="594" y="130" fill="#FFFFFF" width="391" height="46"/>
+	<rect x="594.5" y="130.5" fill="none" stroke="#0E3047" stroke-miterlimit="10" width="391" height="46"/>
+</g>
+<text transform="matrix(1 0 0 1 594.584 213.6233)" fill="#0E3047" stroke="#0B2D40" stroke-width="0.0957" stroke-miterlimit="10" font-family="'BerninoSans-CondensedRegular'" font-size="27.145" letter-spacing="1">PASSWORT (optional)</text>
+<g>
+	<rect x="594" y="223" fill="#FFFFFF" width="391" height="46"/>
+	<rect x="594.5" y="223.5" fill="none" stroke="#0E3047" stroke-miterlimit="10" width="391" height="46"/>
+</g>
+<text transform="matrix(1 0 0 1 594.584 307.6233)" fill="#0E3047" stroke="#0B2D40" stroke-width="0.0957" stroke-miterlimit="10" font-family="'BerninoSans-CondensedRegular'" font-size="27.145" letter-spacing="1">SPIELBESCHREIBUNG (optional)</text>
+<g>
+	<rect x="594" y="317" fill="#FFFFFF" width="391" height="46"/>
+	<rect x="594.5" y="317.5" fill="none" stroke="#0E3047" stroke-miterlimit="10" width="391" height="46"/>
+</g>
+</svg>

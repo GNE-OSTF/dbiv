@@ -1,0 +1,22 @@
+{
+  "name": "dasbootistvoll",
+  "subdomain": "dasbootistvoll",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "version": "0.0.3-6",
+  "dependencies": {
+    "socket.io": "0.9.x",
+    "express": "3.4.x",
+    "screenfull": "~1.2.1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "os": "sunos",
+  "bundledDependencies": [
+    "express",
+    "screenfull",
+    "socket.io"
+  ]
+}

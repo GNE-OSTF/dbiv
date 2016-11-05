@@ -1,0 +1,1017 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+/* playerlist and boardwrap are outerleft */
+#outerleft {
+  display:flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+/* playerlist stuff */
+#playerlist {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+}
+
+#playerlist div {
+  text-align: center;
+}
+
+.playerlistPic {
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+}
+
+.playerlistPic:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.playerlistPicGray {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.playerListName {
+}
+
+.listedPlayer {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+  margin-bottom: 0;
+}
+
+#listedPlayer1 {
+  background-image: url('graphics/playerpicframes/player1picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+#listedPlayer2 {
+  background-image: url('graphics/playerpicframes/player2picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+#listedPlayer3 {
+  background-image: url('graphics/playerpicframes/player3picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+#listedPlayer4 {
+  background-image: url('graphics/playerpicframes/player4picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+#listedPlayer5 {
+  background-image: url('graphics/playerpicframes/player5picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+#listedPlayer6 {
+  background-image: url('graphics/playerpicframes/player6picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+#listedPlayer7 {
+  background-image: url('graphics/playerpicframes/player7picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+#listedPlayer8 {
+  background-image: url('graphics/playerpicframes/player8picframe.svg');
+  /*visibility: hidden;*/
+  display:none;
+}
+
+/*Board Stuff*/
+#boardwrap {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 99vmin;
+  height: 99vmin;
+  min-width: 600;
+  min-height: 600;
+  flex-shrink: 1;
+}
+
+#board {
+
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+}
+
+
+#info {
+  width: 56%;
+  height: 56%;
+  position: absolute;
+  left: 22%;
+  top: 22%;
+}
+
+#chooseCharacter {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  list-style-type: none;
+}
+
+#chooseRoom {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#leftRooms {
+  width: 50%;
+  height: 85%;
+  float: left;
+  text-align: center;
+}
+
+#rightRooms {
+  width: 50%;
+  height: 85%;
+  float: left;
+  text-align: center;
+}
+
+.roomList {
+  padding: 0;
+  list-style-type: none;
+}
+
+.roomList li {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAAC58), to(#F3F781));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin: 0;
+  width: 50%;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top, #FAAC58 0%, #F3F781 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, #FAAC58 0%, #F3F781 100%);
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, #FAAC58 0%, #F3F781 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FAAC58), color-stop(1, #F3F781));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, #FAAC58 0%, #F3F781 100%);
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom, #FAAC58 0%, #F3F781 100%);
+
+}
+
+#leftRooms li {
+  margin-left: 47.5%;
+}
+
+#rightRooms li {
+  margin-left: 2.5%;
+}
+
+.roomList li:hover {
+  color: white;
+  font-weight: bold;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#249ee4), to(#057cc0));
+}
+
+
+/*Options Stuff*/
+div#options {
+  width: 65px;
+  right: 0;
+  z-index: 10;
+  position: fixed;
+  /*background: brown;*/
+}
+
+div#options img {
+  width: 30px;
+}
+
+/*Panel Stuff*/
+#panelwrapper {
+  /*float: left;*/
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  padding: 20px;
+  margin: 0;
+  min-height: 600px;
+  flex-basis: 240px;
+  flex-grow: 1;
+  height:99vh - 40px;
+}
+
+#infopanel {
+  height: calc(50vh - 70px);
+  min-height: 222px;
+}
+
+#infotabriders {
+  padding: 0;
+  margin: 0;
+  border:none;
+
+  
+  height: 1.75rem;
+  min-width: 240px;
+
+}
+.paneltab {
+  float:left;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-top: 5px;  
+  
+  height: 100%;
+  
+  background-color: #0f3147;
+  width: 80px;
+  -webkit-border-radius: 20px 20px 0px 0px;
+  -moz-border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+.paneltab.active {
+  background-color: #63C1FF;
+}
+
+.tabridertext {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  padding-top: 5px;
+  height: calc(100% - 5px);
+
+  color: #FFF;
+  cursor: pointer;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+#infopanelbackground {
+  clear: left;
+  
+  height: calc(100% - 1.75rem - 16px);
+  background-color: #01234A; 
+  border: solid;
+  border-width: 4px;
+  border-color: #63C1FF;
+}
+
+#infopanelcontent {
+  margin: 8px;
+  padding: 8px;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  background-color: #FFF;
+  overflow: scroll;
+}
+
+
+
+#dicespanel {
+  height: 100px;
+  width: 150px;
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ready {
+  margin:auto;
+}
+
+#rollDices {
+
+}
+
+#readyButton {
+  display:block;
+  margin: 0 auto;
+}
+#button-dices {
+  display:block;
+  margin: 0 auto;
+}
+
+#countdown {
+  display: block;
+  margin:0 auto;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+#chatpanelbackground {
+  height: calc(50vh - 102px);
+  min-height: 222px;
+  
+  border: solid;
+  border-width: 8px;
+  border-color: #63C1FF;
+  
+  background-color: #01234A;
+}
+
+
+#chattext {
+  margin: 8px;
+  padding: 8px;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px - 10% - 8px);
+
+  background-color: #FFF;
+  word-wrap: break-word;
+}
+
+#chattype {
+  margin: 0 8px;
+  padding: 0;
+  width: calc(100% - 16px);
+
+  height: 10%;
+   
+  background-color: #FFF;
+}
+
+#chatinput {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* the SVG styles */
+.hoverSVG:hover {
+  opacity: 0.8;
+}
+.clickable:hover {
+  cursor: pointer;
+}
+.clickable:active {
+  opacity: 0.6;
+}
+/* end of SVG styles */
+
+
+#controlwrap {/*where the fuck is controlwrap? no control container? XD*/
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 50%;
+  background: black;
+  /*background: rgba(255, 0, 0, 0.75);*/
+}
+
+.noPointer {
+  cursor: default !important;
+}
+
+.control {
+  background-color: #ddd;
+  margin-bottom: 0.25%;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  float: left;
+}
+
+
+/* What is portrait?*/
+#portrait {
+  width: auto;
+  float: left;
+  background: black;
+}
+
+
+
+
+
+#tabStatus {
+  display: none;
+}
+
+.grayBg {
+  background-color: #ddd;
+}
+
+/*.bgPicture {
+  background-image: url('svg/SPIELBRETT_FÜR_WEB-41.svg');
+  background-size: 100% auto;
+}*/
+
+#chooseCharacterLeft {
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+#chooseCharacter li {
+  width: 80%;
+  float: left;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAAC58), to(#F3F781));
+  margin: 0;
+  margin-left: 10%;
+  cursor: pointer;
+  background-color: #EEE;
+  font-size: 10pt;
+}
+
+#chooseCharacter li:hover {
+  color: white;
+  font-weight: bold;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#249ee4), to(#057cc0));
+}
+
+#chooseCharacterRight {
+  width: 50%;
+  float: left;
+}
+
+.characterList {
+  color: red;
+  float: left;
+  width: 60%;
+}
+
+.characterList li {
+  color: red;
+  background-color: #EEE;
+  margin-bottom: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+.field {
+  background-color: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldTextBuffer {
+  background-color: none;
+  height: 20%;
+}
+
+.fieldText {
+  margin: 0;
+  padding: 0;
+  background-color: none;
+  height: 50%;
+  font-size: 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.fieldNrBuffer {
+  background-color: none;
+  height: 5%;
+}
+
+.whiteBg {
+  background-color: white !important;
+}
+
+.fieldNr {
+  background-color: none;
+  padding: 0;
+  margin: 0;
+  height: 25%;
+  width: 100%;
+  bottom: 0;
+  float: left;
+}
+
+.die.one:after {
+  box-shadow: 0 .2em 0 #FFF;
+}
+
+.die.two:after {
+  background: transparent;
+  box-shadow: -2.3em -2.3em 0 #345,
+  2.3em 2.3em 0 #345,
+  -2.3em -2.3em 0 #FFF,
+  2.3em 2.4em 0 #FFF;
+}
+
+.die.three:after {
+  box-shadow: -2.3em -2.3em 0 #345,
+  2.3em 2.3em 0 #345,
+  -2.3em -2.3em 0 #FFF,
+  2.3em 2.4em 0 #FFF,
+  0 .2em 0 #FFF;
+}
+
+.die.four:after {
+  background: transparent;
+  box-shadow: -2.3em -2.3em 0 #345,
+  2.3em 2.3em 0 #345,
+  -2.3em 2.3em 0 #345,
+  2.3em -2.3em 0 #345,
+  -2.3em -2.3em 0 #FFF,
+  2.3em 2.4em 0 #FFF,
+  -2.3em 2.4em 0 #FFF,
+  2.3em -2.3em 0 #FFF;
+}
+
+.die.five:after {
+  box-shadow: -2.3em -2.3em 0 #345,
+  2.3em 2.3em 0 #345,
+  -2.3em 2.3em 0 #345,
+  2.3em -2.3em 0 #345,
+  -2.3em -2.2em 0 #FFF,
+  2.3em -2.2em 0 #FFF,
+  2.3em 2.4em 0 #FFF,
+  -2.3em 2.4em 0 #FFF,
+  0 .2em 0 #FFF;
+}
+
+.die.six:after {
+  background: transparent;
+  box-shadow: -2.3em -2.3em 0 #345,
+  -2.3em 0 0 #345,
+  -2.3em 2.3em 0 #345,
+  2.3em -2.3em 0 #345,
+  2.3em 0 0 #345,
+  2.3em 2.3em 0 #345,
+  -2.3em -2.1em 0 #FFF,
+  -2.3em .2em 0 #FFF,
+  -2.3em 2.4em 0 #FFF,
+  2.3em 2.4em 0 #FFF,
+  2.3em .2em 0 #FFF,
+  2.3em -2.1em 0 #FFF;
+}
+
+.die {
+  border-top: 1px solid #f1f1f1;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  font-size: 6px;
+  display: inline-block;
+  box-shadow: 0px 5px 0 #CCC, 0 6px 3px #444, 0 10px 5px #999;
+  background-image: linear-gradient(top, #fefefe, #f1f1f1 80%);
+}
+
+.die:after {
+  content: "";
+  width: 20%;
+  height: 20%;
+  left: 50%;
+  top: 50%;
+  margin: -10%;
+  background: #345;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+/* left control panel divs */
+
+#controlLeft {
+  background-color: none;
+  height: 97%;
+  width: 50%;
+  float: left;
+}
+
+#DBIV-logo {
+  height: 14%;
+  padding-left: 30%;
+  background-color: #FFF;
+}
+
+#minus-logo {
+  height: 100% -82px;
+}
+
+#tabPlayer {
+}
+
+#tabStreet {
+  display: none;
+}
+
+#avatar {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#playerInfo {
+  text-align: left;
+  background-color: none;
+  height: 100%;
+}
+
+#serverlog {
+  background-color: none;
+  height: 20%;
+  width: 100%;
+}
+
+#console {
+  width: 90%;
+  height: 80%;
+  text-align: left;
+  margin-left: 5%;
+  background-color: #ccc;
+  overflow: auto;
+}
+
+#facts {
+  height: 15%;
+  margin-bottom: 0%;
+}
+
+/* right control panel divs */
+
+#controlRight {
+  background-color: none;
+  height: 97%;
+  width: 50%;
+  margin-left: 50%;
+}
+
+#fieldInfo {
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#fieldInfo th {
+  cursor: default;
+  height: 2rem;
+}
+
+#fieldInfo td {
+  cursor: default;
+  height: 1.25rem;
+  padding-right: 3rem;
+}
+
+#dices {
+}
+
+#impressum {
+  height: 3%;
+  background-color: none;
+  float: left;
+  width: 100%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+  font-weight: bold;
+}
+
+.left {
+  text-align: left;
+}
+
+span {
+  font-weight: bold;
+}
+
+.figure1 {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  float: left;
+}
+
+.figure2 {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: green;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  float: left;
+}
+
+.figure3 {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: blue;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  float: left;
+}
+
+.figure4 {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: red;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  float: left;
+}
+
+.figure5 {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  float: left;
+}
+
+.figure6 {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: black;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+  float: left;
+}
+
+
+
+/********************************************************
+******************** POPUP ******************************
+********************************************************/
+
+#hintergrund {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000000;
+}
+
+#popup {
+  display: none;
+  z-index: 2;
+  position: fixed;
+  width: 476px;
+  height: 317px;
+  top: 20%;
+  left: 50%;
+  margin-left: -250px;
+  border-radius: 5px 5px 5px 5px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #000;
+  /*background: url("media/job2.png");*/;
+}
+
+div.schliessen {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  left: 27px;
+  bottom: 24px;
+  float: right;
+  cursor: pointer;
+}
+
+#popup-content {
+  margin-left: 46px;
+  margin-top: 110px;
+  margin-right: 20px;
+  height: 131px;
+  overflow: auto;
+}
+
+#popup-buttons {
+  height: 46px;
+  margin-bottom: 30px;
+  margin-left: 46px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+#popup-button-ok {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-position: center;
+}
+
+#popup-button-cancel {
+  margin-left: 50%;
+  height: 100%;
+  background-position: center;
+}
+
+.popup-button {
+  cursor: pointer;
+}
+
+
+
+/********************************************************/
+/* Field Owner images*/
+.field-owner-top {
+  position: absolute;
+  top: 0;
+}
+
+.field-owner-right {
+  position: absolute;
+  right: 0;
+}
+
+.field-owner-left {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+
+}
+
+.field-owner-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.field-owner-right img {
+  -moz-transform: rotate(90deg); /* Firefox 3.6 Firefox 4 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  -o-transform: rotate(90deg); /* Opera */
+  -ms-transform: rotate(90deg); /* IE9 */
+  transform: rotate(90deg); /* W3C */
+}
+
+.field-owner-left img {
+  -moz-transform: rotate(270deg); /* Firefox 3.6 Firefox 4 */
+  -webkit-transform: rotate(270deg); /* Safari */
+  -o-transform: rotate(270deg); /* Opera */
+  -ms-transform: rotate(270deg); /* IE9 */
+  transform: rotate(270deg); /* W3C */
+}
+
+.field-owner-bottom img {
+  -moz-transform: rotate(180deg); /* Firefox 3.6 Firefox 4 */
+  -webkit-transform: rotate(180deg); /* Safari */
+  -o-transform: rotate(180deg); /* Opera */
+  -ms-transform: rotate(180deg); /* IE9 */
+  transform: rotate(180deg); /* W3C */
+}
+
+
+
+/* responsive stuff  ------------------------------------------------------------------------ */
+@media (max-width: 1350px) {
+  /* here the panelwrapper will be wrapped below the board*/
+  
+  #panelwrapper {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 100%;
+    min-width: 600px;
+    height: 400px;
+    padding-left: 20px;
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+  }
+
+  #dicespanel {
+    height: 100px;
+    
+    margin: 0;
+    margin-top: 0;
+  }
+
+  #infopanel {
+    flex-grow: 2;
+    height: 100%;
+    max-width: 500px;
+  }
+
+  #chatpanelbackground {
+    margin-top: 1.75rem;
+    flex-grow: 2;
+    height: calc(100% - 1.75rem - 16px);
+    max-width: 400px;
+    margin-right: auto;
+  }
+  
+}
+
+
+@media (max-width: 970px) {
+  /* here the playerlist will be wrapped above the board */
+  
+  #outerleft {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width:100%;
+  }
+
+  #playerlist {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+
+  .listedPlayer {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    margin-right: 0;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  
+  .listedPlayer {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+  }
+  
+}
